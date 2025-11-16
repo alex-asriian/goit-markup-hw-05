@@ -470,25 +470,31 @@
             </li>
           </ul>
         </div>
-        <form name="e-mail-input-form" class="foot-form" autocomplete="off">
-          <label class="form-label" for="e-mail">Subscribe</label>
-          <div class="e-mail_subscr">
+        <div class="footer-form-wrapper">
+          <p class="footer-form-title">Subscribe</p>
+          <form class="foot-form" name="e-mail-input-form" autocomplete="off">
+            <label class="foot-form-label" for="e-mail"></label>
             <input
+              class="e-mail-input"
               type="email"
               name="e-mail"
               id="e-mail"
-              class="e-mail-input"
               placeholder="E-mail"
             />
-            <button type="submit" class="subscr-btn">Subscribe</button>
-          </div>
-        </form>
+            <button class="subscr-btn" type="submit">
+              Subscribe
+              <svg class="foot-form-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!--#endregion footer-->
     <!--#region popup-->
-    <div class="backdrop">
+    <div class="backdrop hidden-popup">
       <!--hidden-popup Додай для приховання модального вікна-->
       <div class="popup">
         <button class="popup-exit" type="button">

@@ -460,13 +460,21 @@ img {
 .footer-socials-icons {
   fill: #f4f4fd;
 }
+.footer-form-wrapper {
+}
+.footer-form-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
 .foot-form {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
-.form-label {
-  font-family: 'Roboto', sans-serif;
+.foot-form-label {
   color: #fff;
   font-weight: 500;
   font-size: 16px;
@@ -491,8 +499,26 @@ img {
 }
 .e-mail-input {
   background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+.e-mail-input::placeholder {
+  color: #ffffff;
 }
 .subscr-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
   border-radius: 4px;
   padding: 8px 24px;
   width: 165px;
@@ -504,6 +530,10 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.foot-form-btn-icon {
+  fill: #fff;
+  margin-left: 16px;
 } /*#endregion footer*/
 /*#region popup*/
 .backdrop {
