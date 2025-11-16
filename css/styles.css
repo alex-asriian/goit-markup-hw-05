@@ -591,11 +591,7 @@ img {
   outline: none;
 }
 
-.popup-exit:hover {
-  background-color: #404bbf;
-  border: none;
-}
-.popup-exit:focus {
+.popup-exit:hover:focus {
   background-color: #404bbf;
   border: none;
 }
