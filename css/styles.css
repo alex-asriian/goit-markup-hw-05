@@ -567,10 +567,10 @@ img {
 .popup-exit:focus {
   background-color: #404bbf;
   border: none;
-  fill: #fff;
+  fill: #ffffff;
 }
 .popup-exit:hover {
-  fill: #fff;
+  fill: #ffffff;
 }
 .popup-exit-icon {
   display: block;
@@ -578,10 +578,7 @@ img {
   stroke: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.popup-exit-icon:hover,
-.popup-exit-icon:focus {
-  fill: #ffffff;
-}
+
 .popup-title {
   font-weight: 500;
   font-size: 16px;
