@@ -64,7 +64,7 @@
           <h1 class="hero-image-title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="hero-image-button">Order Service</button>
+          <button type="button" class="ordinary-button">Order Service</button>
         </div>
       </section>
 
@@ -477,7 +477,7 @@
               type="email"
               name="e-mail"
               id="e-mail"
-              class="e-mail-imput"
+              class="e-mail-input"
               placeholder="E-mail"
             />
             <button type="submit" class="subscr-btn">Subscribe</button>
@@ -488,43 +488,62 @@
 
     <!--#endregion footer-->
     <!--#region popup-->
-    <div class="backdrop">
+    <div class="backdrop hidden-popup">
       <div class="popup">
-        <button class="popup-exit" type="button">X</button>
+        <button class="popup-exit" type="button">
+          <svg class="popup-exit-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <p class="popup-title">Leave your contacts and we will call you back</p>
         <form class="popup-form">
           <div class="form-field-wrapper">
             <label class="label-field" name="username" for="user-name"
               >Name</label
             >
-            <input
-              class="input-field"
-              type="text"
-              id="user-name"
-              name="user-name"
-            />
+            <div class="field-wrapper">
+              <input
+                class="input-field"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="field-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field-wrapper">
             <label class="label-field" name="usertel" for="user-tel"
               >Phone</label
             >
-            <input
-              class="input-field"
-              type="tel"
-              id="user-tel"
-              name="user-tel"
-            />
+            <div class="field-wrapper">
+              <input
+                class="input-field"
+                type="tel"
+                id="user-tel"
+                name="user-tel"
+              />
+              <svg class="field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field-wrapper">
             <label class="label-field" name="useremail" for="user-em"
               >Email</label
             >
-            <input
-              class="input-field"
-              type="email"
-              id="user-em"
-              name="user-em"
-            />
+            <div class="field-wrapper">
+              <input
+                class="input-field"
+                type="email"
+                id="user-em"
+                name="user-em"
+              />
+              <svg class="field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field-wrapper">
             <label class="label-field" name="usercomment" for="user-text"
@@ -539,16 +558,28 @@
             ></textarea>
           </div>
           <div class="form-field-wrapper">
-            <input type="checkbox" id="policy" name="policy" value="true" />
-            <label for="policy"
-              >I accept the terms and conditions of the
+            <input
+              class="policy-chb visually-hidden"
+              type="checkbox"
+              id="policy"
+              name="policy"
+              value="true"
+            />
+            <label for="policy" class="policy">
+              <span class="custom-chb">
+                <svg class="chb-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-cheked"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a href="">Privacy Policy</a></label
             >
           </div>
-          <button type="submit" class="popup-btn">Send</button>
+          <button type="submit" class="ordinary-button">Send</button>
         </form>
       </div>
     </div>
+
     <!--#endregion popup-->
   </body>
 </html>
